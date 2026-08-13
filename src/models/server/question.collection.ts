@@ -1,7 +1,7 @@
 import { DatabasesIndexType, DatabaseStatus, OrderBy, Permission } from "node-appwrite"
 
 import {db, questionCollection } from "../name"
-import {databases} from "../client/config"
+import {databases} from "./config"
 
 // creating a collection for storing questions data, so this function will generate a collection named questionCollection
 export default async function createQuestionCollection(){
