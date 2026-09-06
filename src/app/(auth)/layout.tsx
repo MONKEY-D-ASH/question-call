@@ -1,3 +1,4 @@
+"use client"
 // the whole idea of the layout is to containerize all the file inside the auth folder just like inside the src folder you have a layout file 
 
 import { useAuthStore } from "@/store/Auth"

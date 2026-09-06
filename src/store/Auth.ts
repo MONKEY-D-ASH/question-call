@@ -46,7 +46,7 @@ interface IAuthStore {
     logout(): Promise<void>;
 }
 
-// The create function in Zustand initializes a global state store and returns a custom React hook that components use to read state and trigger actions. It allows you to manage application state externally without needing a context Provider.
+// The create function in Zustand initializes a global state store and returns a custom React (((hook))) that components use to read state and trigger actions. It allows you to manage application state externally without needing a context Provider.
 // we are creating a store using the zustand library method create() which is told to follow this IAuthStore interface 
 
 // the immer is a higher level abstraction that gives you clean and simple syntax while still preserving immutability (which react and zustand rely on for change detection and performance), without immer you would have to manually create new objects copy everytime you want to update the state which is very verbose and as you would have to use a lot of spread operator, with immer() you can write a cleaner syntax which under the hood do the same spread operator thing but is more readable.
