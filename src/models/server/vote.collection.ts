@@ -14,6 +14,7 @@ export default async function createVoteCollection() {
     console.log("Vote Collection Created");
     
     // creating attributes
+    // here typeId is meant to store the resource to which the vote is attached which in this case is either a question or an answer 
     await Promise.all([
         databases.createEnumAttribute(db, voteCollection, "type", ["question", "answer"], true),
         databases.createStringAttribute(db, voteCollection, "typeId", 50, true),

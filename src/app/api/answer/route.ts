@@ -21,7 +21,7 @@ export async function POST(request: NextRequest){
     await users.updatePrefs(authorId, {
         reputation: Number(prefs.reputation) + 1
     })
-
+ 
     return NextResponse.json(response, {
         status: 201
     })
